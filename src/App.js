@@ -1,25 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './componentes/Nav';
+import VideoCard from './componentes/videoCard';
+import styled from 'styled-components';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  const VideoContainer = styled.div`
+    display: flex;
+    gap: 2rem;
+     flex-wrap: wrap;
+     justify-content: center;
+     padding: 7% 14% 7% 14%;
+  `
+
+  return <>
+  
+  <Navbar />
+  <VideoContainer>
+  <VideoCard />
+  <VideoCard />
+  <VideoCard />
+  <VideoCard />
+  <VideoCard />
+  <VideoCard />
+  </VideoContainer>
+ 
+  
+  
+  
+  </>
 }
 
 export default App;
