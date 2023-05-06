@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import testimg from './portada.jpg'
 
-const VideoCard = () => {
+const VideoCard = (props) => {
 
     const Div = styled.div `
         display: flex;
@@ -18,12 +18,10 @@ const VideoCard = () => {
         
     `
 
-
-
     return <Div>
-        <Img src= {testimg} alt="" />
-        <Titulo>New super mario bros gameplay how to make a victory</Titulo>
-        <p>Categoria</p>
+        <Img src= {props.img} alt="" />
+        <Titulo>{props.titulo}</Titulo>
+        <p>{props.categoria}</p>
     </Div>
 }
 

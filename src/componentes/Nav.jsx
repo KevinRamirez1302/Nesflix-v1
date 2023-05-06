@@ -1,5 +1,8 @@
 import styled from "styled-components"
 import {RiMovieLine} from 'react-icons/ri'
+import { Link } from "react-router-dom"
+import { motion } from "framer-motion" 
+
 
 const Navbar = () => {
 
@@ -15,18 +18,18 @@ const Navbar = () => {
     -moz-box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.65);
     `
 
-    const Link = styled.a `
-     text-decoration: none;
-     margin: 1rem;
-     font-weight: bold;
-     color: white;
-     font-size: 1rem;
-     transition: all 300ms;
-     :hover{
-        color: #006fff;
-        font-size: 1.2rem;
-     }
-     `
+    const estilosA = styled.a `
+       text-decoration: none;
+      margin: 1rem;
+       font-weight: bold;
+       color: white;
+      font-size: 1rem;
+       transition: all 300ms;
+       :hover{
+         color: #006fff;
+         font-size: 1.2rem;
+      }
+      `
 
     const Ul = styled.ul`
         display: flex;
@@ -60,13 +63,21 @@ const Navbar = () => {
     return <Nav action="">
 
         <Div>
-        <Titulo href="">Nes<Span>flix</Span></Titulo>
-        <RiMovieLine color="white" size= {40} />
-        </Div>
+        <Titulo href="/">Nes<Span>flix</Span></Titulo>
+        <motion.div 
+        initial={{ scale: 0 }}
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20
+          }}
+        ><RiMovieLine color="white" size= {40} /></motion.div>
+      </Div>
         
         <Ul>
-            <Li><Link href="#">Add Movie</Link></Li>
-            <Li><Link href="#">Videos</Link></Li>
+            <Li><Link className='estilosA' to="Addvideo">Add Movie</Link></Li>
+            <Li><Link to="Videos">Videos</Link></Li>
         </Ul>
 
     </Nav>
