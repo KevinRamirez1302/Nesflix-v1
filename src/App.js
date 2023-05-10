@@ -4,24 +4,38 @@ import VideoCard from "./componentes/videoCard";
 import { Container } from "@mui/material";
 import styled from "styled-components";
 import Formulario from "./componentes/Formulario";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import axios from "axios";
+import { Front } from "./componentes/Front/front";
+
 
 function App() {
-  const [videos, setVideos] = useState([
-    {
-      nombre: "Mario bros pelicula",
-      Descrip: "ashdhadbasdkjasbksdskabdjbadbaskdkjbsad",
-      url: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/12/all-of-goku-s-forms-in-dragon-ball-ranked-by-impact.jpg",
-      categoria: "Comedia",
-    },
-  ]);
+  const [videos, setVideos] = useState([])
+
+  const Data = async() => {
+    try {
+      axios.get('http://localhost:4000/peliculas').then(res => setVideos(res.data) )
+     }
+     catch {}
+  }
+  
+ useEffect(()=> {
+
+  Data()
+  
+ },[])
+
 
   const recibirDatos = (datos) => {
-    console.log("colaborador registrado" + datos);
+    
+  axios.post(('http://localhost:4000/peliculas'),datos)
+
     setVideos([...videos, datos]);
   };
 
+
+ 
   const VideoContainer = styled.div`
     display: flex;
     gap: 2rem;
@@ -49,12 +63,13 @@ function App() {
             path="videos"
             element={
               <VideoContainer>
-                {videos.map(({ nombre, url, categoria }) => (
-                  <VideoCard img={url} titulo={nombre} categoria={categoria} />
-                ))}
+                 {videos.map(({ nombre, IMG, categoria, url, id }) => (
+                  <VideoCard url={url}  img={IMG} titulo={nombre} categoria={categoria} />
+                ))} 
               </VideoContainer>
             }
           />
+          <Route path="/" element={ <Front />} />
         </Routes>
       </Router>
     </>

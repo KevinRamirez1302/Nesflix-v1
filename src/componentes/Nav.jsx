@@ -10,24 +10,21 @@ const Navbar = () => {
     display: flex;
     background-color: #2d2d2d;
     justify-content: space-between;
-    height: 3.8rem;
+    height: 6rem;
     padding: 0 7rem 0 3rem;
     align-items: center;
-    box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.65);
-    -webkit-box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.65);
-    -moz-box-shadow: 0px 4px 12px 2px rgba(0,0,0,0.65);
     `
 
-    const estilosA = styled.a `
+    const LinkSty = styled(Link) `
        text-decoration: none;
       margin: 1rem;
        font-weight: bold;
        color: white;
-      font-size: 1rem;
+      font-size: 1.4rem;
        transition: all 300ms;
        :hover{
          color: #006fff;
-         font-size: 1.2rem;
+         
       }
       `
 
@@ -36,7 +33,7 @@ const Navbar = () => {
     `
     const Titulo = styled.a`
         text-decoration:  none;
-        font-size: 2rem;
+        font-size: 2.5rem;
         font-weight: bold;
         color: #006fff;
     `
@@ -49,7 +46,7 @@ const Navbar = () => {
 
     const Span = styled.span`
         color: #FFFFFF;
-        font-size: 1.5rem;
+        font-size: 2rem;
         margin-right: .6rem;
     `
 
@@ -76,8 +73,8 @@ const Navbar = () => {
       </Div>
         
         <Ul>
-            <Li><Link className='estilosA' to="Addvideo">Add Movie</Link></Li>
-            <Li><Link to="Videos">Videos</Link></Li>
+            <Li><LinkSty to="Addvideo">Add Movie</LinkSty></Li>
+            <Li><LinkSty to="Videos">Videos</LinkSty></Li>
         </Ul>
 
     </Nav>

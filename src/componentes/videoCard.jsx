@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import testimg from './portada.jpg'
 
 const VideoCard = (props) => {
 
-    const Div = styled.div `
+    const Div = styled.a`
         display: flex;
         flex-direction: column;
         width: 30%;
+        text-decoration: none;
     `
     const Titulo = styled.h5`
         font-weight: bold;
@@ -18,7 +18,7 @@ const VideoCard = (props) => {
         
     `
 
-    return <Div>
+    return <Div href={props.url} target="_blank">
         <Img src= {props.img} alt="" />
         <Titulo>{props.titulo}</Titulo>
         <p>{props.categoria}</p>

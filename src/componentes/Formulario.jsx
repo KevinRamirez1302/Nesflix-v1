@@ -7,6 +7,7 @@ import {
   Select,
 } from "@mui/material";
 import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 
 const Formulario = (props) => {
   const [nombre, SetNombre] = useState("");
@@ -22,6 +23,7 @@ const Formulario = (props) => {
       Descrip: Descrip,
       url: url,
       categoria: categoria,
+      id: uuidv4()
     };
     SetNombre("");
     Seturl("");

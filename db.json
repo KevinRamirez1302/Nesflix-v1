@@ -1,0 +1,20 @@
+{
+  "peliculas": [
+    {
+      "nombre": "Hora de aventura",
+      "descripcion": "Dragon ball z",
+      "IMG": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/12/all-of-goku-s-forms-in-dragon-ball-ranked-by-impact.jpg",
+      "url": "https://www.youtube.com/watch?v=bimEyBXcJOM&ab_channel=chespiritocapituloscompletos",
+      "id": "",
+      "categoria": "Comedia"
+    },
+    {
+      "nombre": "Hora de aventura",
+      "descripcion": "Dragon ball z",
+      "IMG": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/12/all-of-goku-s-forms-in-dragon-ball-ranked-by-impact.jpg",
+      "url": "https://www.youtube.com/watch?v=bimEyBXcJOM&ab_channel=chespiritocapituloscompletos",
+      "id": "",
+      "categoria": "Comedia"
+    }
+  ]
+}
