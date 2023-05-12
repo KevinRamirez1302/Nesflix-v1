@@ -3,16 +3,17 @@ import {RiMovieLine} from 'react-icons/ri'
 import { Link } from "react-router-dom"
 import { motion } from "framer-motion" 
 
-
-const Navbar = () => {
-
-    const Nav = styled.nav `
+const Nav = styled.nav `
     display: flex;
     background-color: #2d2d2d;
     justify-content: space-between;
-    height: 6rem;
-    padding: 0 7rem 0 3rem;
+    height: 4rem;
+    padding: 0 15% 0 10%;
     align-items: center;
+    @media screen and (max-width:600px) {
+
+        padding: 0 7% 0 7%;
+}
     `
 
     const LinkSty = styled(Link) `
@@ -20,22 +21,57 @@ const Navbar = () => {
       margin: 1rem;
        font-weight: bold;
        color: white;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
+      border-radius: 7px;
        transition: all 300ms;
+       padding: .5rem .3rem;
+       
        :hover{
-         color: #006fff;
          
+         background-color: #006fff;
       }
+
+      @media screen and (max-width:600px) {
+
+        font-size: 1.2rem;
+      }
+
+      
       `
+
+const A = styled.a `
+text-decoration: none;
+margin: 1rem;
+font-weight: bold;
+color: white;
+font-size: 1.3rem;
+border-radius: 7px;
+transition: all 300ms;
+padding: .5rem .3rem;
+
+:hover{
+  
+  background-color: #006fff;
+}
+@media screen and (max-width:600px) {
+
+font-size: 1.2rem;
+}
+
+`
 
     const Ul = styled.ul`
         display: flex;
     `
-    const Titulo = styled.a`
+    const Titulo = styled(Link)`
         text-decoration:  none;
         font-size: 2.5rem;
         font-weight: bold;
         color: #006fff;
+        @media screen and (max-width:600px) {
+
+font-size: 1.7rem;
+}
     `
 
     const Li = styled.li`
@@ -48,19 +84,25 @@ const Navbar = () => {
         color: #FFFFFF;
         font-size: 2rem;
         margin-right: .6rem;
+        @media screen and (max-width:600px) {
+
+font-size: 1.5rem;
+}
     `
 
     const Div = styled.div `
         display: flex;
         align-items: center;
     `
-    
+
+
+const Navbar = (props) => {
 
 
     return <Nav action="">
 
         <Div>
-        <Titulo href="/">Nes<Span>flix</Span></Titulo>
+        <Titulo to="/">Nes<Span>flix</Span></Titulo>
         <motion.div 
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: 1 }}
@@ -74,7 +116,7 @@ const Navbar = () => {
         
         <Ul>
             <Li><LinkSty to="Addvideo">Add Movie</LinkSty></Li>
-            <Li><LinkSty to="Videos">Videos</LinkSty></Li>
+            <Li><A href="Videos">Videos</A></Li>
         </Ul>
 
     </Nav>
