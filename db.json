@@ -1,20 +1,12 @@
 {
   "peliculas": [
     {
-      "titulo": "Hora de aventura",
-      "descripcion": "Dragon ball z",
-      "IMG": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/12/all-of-goku-s-forms-in-dragon-ball-ranked-by-impact.jpg",
-      "url": "https://www.youtube.com/watch?v=bimEyBXcJOM&ab_channel=chespiritocapituloscompletos",
-      "id": "",
-      "categoria": "front end"
-    },
-    {
-      "titulo": "Hora de aventura",
-      "descripcion": "Dragon ball z",
-      "IMG": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/12/all-of-goku-s-forms-in-dragon-ball-ranked-by-impact.jpg",
-      "url": "https://www.youtube.com/watch?v=bimEyBXcJOM&ab_channel=chespiritocapituloscompletos",
-      "id": "",
-      "categoria":"back end"
+      "titulo": "como usar framer motion con react",
+      "Descrip": "",
+      "url": "https://www.youtube.com/watch?v=4HnLIAX0EoM&t=2344s&ab_channel=midulive",
+      "Img": "https://konstantinlebedev.com/static/76d81ec25cd799b15cd16c0b16e869af/cover.png",
+      "categoria": "front end",
+      "id": "c22220d7-15a7-40e8-bb51-3999deaac6e9"
     }
   ]
 }

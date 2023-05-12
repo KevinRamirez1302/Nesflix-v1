@@ -32,6 +32,7 @@ const Formulario = (props) => {
     Seturl("");
     SetDescrip("");
     Setcategoria("");
+    setImg('')
 
     props.recibirDatos(Datos);
   };
@@ -64,7 +65,7 @@ const Formulario = (props) => {
         onChange={(e) => setImg(e.target.value)}
         fullWidth
         margin="normal"
-        label=" Url"
+        label=" Url imagen"
         variant="outlined"
       />
       <TextField
@@ -82,8 +83,8 @@ const Formulario = (props) => {
           onChange={(e) => Setcategoria(e.target.value)}
           label="Categoria"
         >
-          <MenuItem value={"FrontEnd"}>FrontEnd</MenuItem>
-          <MenuItem value={"BackEnd"}>BackEnd</MenuItem>
+          <MenuItem value={"Front End"}>FrontEnd</MenuItem>
+          <MenuItem value={"Back End"}>BackEnd</MenuItem>
           <MenuItem value={"Fetch"}>Fetch</MenuItem>
           <MenuItem value={"Javascript"}>Javascript</MenuItem>
           <MenuItem value={"Tips"}>Tips</MenuItem>

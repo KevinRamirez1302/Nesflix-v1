@@ -10,13 +10,14 @@ const Seccion = (props) => {
         <Titulo style={{borderColor:SecondaryColor}}>{Nombre}</Titulo>
         <VideoContain>
             {
-                videos.map(({IMG,titulo,categoria,url}) => { 
+                videos.map(({Img,titulo,categoria,url,Descrip}) => { 
                     return <VideoCard
                         key={titulo}
-                        img={IMG}
+                        img={Img}
                         titulo= {titulo}
                         categoria={categoria}
                         url={url}
+                        descripcion={Descrip}
                     /> })
                     
             }

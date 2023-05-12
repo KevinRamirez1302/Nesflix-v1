@@ -125,12 +125,8 @@ function App() {
                 datos={datos} 
                 key={datos.Nombre}
                 videos={videos.filter(video => video.categoria === datos.Nombre.toLowerCase())}
-                />
-                
+                /> 
                 )}
-              
-              
-             
            </VideoContainer>
               }
             
