@@ -1,5 +1,4 @@
 import {RiMovieLine} from 'react-icons/ri'
-import { Link } from "react-router-dom"
 import { motion } from "framer-motion"
 import { Nav,LinkSty,A,Ul,Titulo,Li,Span,Div } from './styles'
 

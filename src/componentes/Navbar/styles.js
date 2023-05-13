@@ -17,13 +17,12 @@ export const Nav = styled.nav `
 
    export const LinkSty = styled(Link) `
        text-decoration: none;
-       margin: 1rem;
        font-weight: bold;
        color: white;
-       font-size: 1.3rem;
+       font-size: 20px;
        border-radius: 7px;
        transition: all 300ms;
-       padding: .5rem .5rem;
+       padding: .4rem 20px;
        background-color: #006fff;
        :hover{
          
@@ -43,10 +42,10 @@ text-decoration: none;
 margin: 1rem;
 font-weight: bold;
 color: white;
-font-size: 1.3rem;
+font-size: 20px;
 border-radius: 7px;
 transition: all 300ms;
-padding: .5rem .3rem;
+padding: .4rem 20px;
 background-color: #006fff;
 
 :hover{
