@@ -6,6 +6,8 @@ import { SwiperSlide } from "swiper/react";
 import { motion } from "framer-motion";
 import {  Pagination, EffectFade, Navigation, Autoplay } from "swiper"
 import { Header, Div, Container, Slider, Span, ImgCube } from "./styles"; 
+import FrontTwo from "../front2/front2";
+import Footer from "../Footer/footer";
 import React from './imgslider/reactjs-icon.svg'
 import HTML from './imgslider/html-5-logo-svgrepo-com.svg' 
 import CSS from './imgslider/css-3-logo-svgrepo-com.svg'
@@ -65,7 +67,8 @@ export const Front = (props) => {
             
         </Container>
 
-        
+        <FrontTwo />
+        <Footer />
 
     </>
     
