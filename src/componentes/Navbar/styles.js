@@ -8,6 +8,7 @@ export const Nav = styled.nav `
     height: 4rem;
     padding: 0 15% 0 10%;
     align-items: center;
+    box-sizing: border-box;
     @media screen and (max-width:600px) {
 
         padding: 0 7% 0 7%;
@@ -16,17 +17,17 @@ export const Nav = styled.nav `
 
    export const LinkSty = styled(Link) `
        text-decoration: none;
-      margin: 1rem;
+       margin: 1rem;
        font-weight: bold;
        color: white;
-      font-size: 1.3rem;
-      border-radius: 7px;
+       font-size: 1.3rem;
+       border-radius: 7px;
        transition: all 300ms;
-       padding: .5rem .3rem;
-       
+       padding: .5rem .5rem;
+       background-color: #006fff;
        :hover{
          
-         background-color: #006fff;
+        
       }
 
       @media screen and (max-width:600px) {
@@ -46,10 +47,11 @@ font-size: 1.3rem;
 border-radius: 7px;
 transition: all 300ms;
 padding: .5rem .3rem;
+background-color: #006fff;
 
 :hover{
   
-  background-color: #006fff;
+  
 }
 @media screen and (max-width:600px) {
 
