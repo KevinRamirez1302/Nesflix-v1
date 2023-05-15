@@ -19,7 +19,7 @@ const Navbar = (props) => {
             stiffness: 260,
             damping: 20
           }}
-        ><RiMovieLine color="white" size= {40} /></motion.div>
+        ><RiMovieLine color="#408d86" size= {40} /></motion.div>
       </Div>
         
         <Ul>

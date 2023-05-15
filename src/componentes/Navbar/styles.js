@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Nav = styled.nav `
     display: flex;
-    background-color: #2d2d2d;
+    background-color: #E0F2F1;
     justify-content: space-between;
     height: 4rem;
     padding: 0 15% 0 10%;
@@ -23,7 +23,7 @@ export const Nav = styled.nav `
        border-radius: 7px;
        transition: all 300ms;
        padding: .4rem 20px;
-       background-color: #006fff;
+       background-color: #43A49B;
        :hover{
          
         
@@ -46,7 +46,7 @@ font-size: 20px;
 border-radius: 7px;
 transition: all 300ms;
 padding: .4rem 20px;
-background-color: #006fff;
+background-color: #43A49B;
 
 :hover{
   
@@ -66,7 +66,7 @@ font-size: 1.2rem;
         text-decoration:  none;
         font-size: 2.5rem;
         font-weight: bold;
-        color: #006fff;
+        color: #408d86;
         @media screen and (max-width:600px) {
 
 font-size: 1.7rem;
@@ -80,7 +80,7 @@ font-size: 1.7rem;
     `
 
    export const Span = styled.span`
-        color: #FFFFFF;
+        color: #80CBC4;
         font-size: 2rem;
         margin-right: .6rem;
         @media screen and (max-width:600px) {

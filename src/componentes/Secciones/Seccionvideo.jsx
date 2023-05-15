@@ -8,7 +8,7 @@ const Seccion = (props) => {
 
     return <>{
         videos.length  > 0 && 
-        <Secciondiv style={{backgroundColor: PrimaryColor}}>
+        <Secciondiv style={{backgroundColor: "white"}}>
              <Titulo style={{borderColor:SecondaryColor}}>{Nombre}</Titulo>
                 <VideoContain>
                  {
@@ -20,6 +20,7 @@ const Seccion = (props) => {
                         categoria={categoria}
                         url={url}
                         descripcion={Descrip}
+                        datos={props.datos}
                     /> })
                     
             }

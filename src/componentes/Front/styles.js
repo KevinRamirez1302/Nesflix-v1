@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export const Header = styled.h1 `
 font-size: 3rem;
 font-family: 'Montserrat', sans-serif;
-color: white;
+color: #263339;
 text-align: left;
 @media screen and (max-width:600px) {
   font-size: 2rem;
@@ -27,7 +27,7 @@ align-items: center;
 `
 
 export const Span = styled.span`
-color: #006fff;
+color: #408d86;
 font-size: 4rem ;
 
 @media screen and (max-width:600px) {
@@ -41,7 +41,7 @@ width: 100%;
 display: flex;
 padding: 0 7rem;
 text-align: left;
-background-color: #2d2d2d;
+background-color: #E0F2F1;
 
 @media screen and (max-width:600px) {
   flex-direction: column;

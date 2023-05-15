@@ -4,9 +4,9 @@ import styled from "styled-components";
     display: flex;
     height: 100vh;
     width: 100%;
-    background: #2d2d2d; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #2d2d2d, #006fff); /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to bottom, #2d2d2d, #006fff);
+    background: -webkit-linear-gradient(to bottom, #E0F2F1, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to bottom, #E0F2F1, #ffffff);
+    
     @media screen and (max-width:600px){
         flex-direction: column;
     }
@@ -22,7 +22,7 @@ export const Div = styled.div`
     align-items: center;
     justify-content: center;
     padding: 2% 7%;
-
+    
     @media screen and (max-width:600px){
         width: 100%;
     }
@@ -38,10 +38,10 @@ export const Imagen = styled.img`
 export const Titulo = styled.h2`
     font-weight: bold;
     margin-bottom: 1rem;
-    color: white;
+    color: #728f9e;
 `
 
 export const Parrafo = styled.p`
     font-size: 20px;
-    color: white;
+    color: #728f9e;
 `
