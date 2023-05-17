@@ -9,12 +9,12 @@
       "id": "c22220d7-15a7-40e8-bb51-3999deaac6e9"
     },
     {
-      "titulo": "dasdasdas",
-      "Descrip": "asdasdad",
-      "url": "asdasdsad",
-      "Img": "asdad",
-      "categoria": "javascript",
-      "id": "e8da927e-f8b7-4189-ac91-5b4c5991c12a"
+      "titulo": "fetching y mutación de datos en react con el hook useeffect",
+      "Descrip": "",
+      "url": "https://www.youtube.com/watch?v=JEWFdKmr5wM&t=49s&ab_channel=midudev",
+      "Img": "https://www.freecodecamp.org/news/content/images/2020/08/wall-2.jpeg",
+      "categoria": "fetch",
+      "id": "e910ed47-672d-4e13-844b-5fc974035662"
     }
   ]
 }

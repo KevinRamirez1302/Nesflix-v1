@@ -51,6 +51,7 @@ const Formulario = (props) => {
         margin="normal"
         label="NOMBRE"
         variant="outlined"
+        required
       />
       <TextField
         value={Descrip}
@@ -67,6 +68,7 @@ const Formulario = (props) => {
         margin="normal"
         label=" Url imagen"
         variant="outlined"
+        required
       />
       <TextField
         value={url}
@@ -75,6 +77,7 @@ const Formulario = (props) => {
         margin="normal"
         label="Video Url"
         variant="outlined"
+        required
       />
       <FormControl margin="normal" fullWidth>
         <InputLabel>Categoria</InputLabel>

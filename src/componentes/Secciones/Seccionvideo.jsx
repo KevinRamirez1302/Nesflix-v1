@@ -8,8 +8,8 @@ const Seccion = (props) => {
 
     return <>{
         videos.length  > 0 && 
-        <Secciondiv style={{backgroundColor: "white"}}>
-             <Titulo style={{borderColor:SecondaryColor}}>{Nombre}</Titulo>
+        <Secciondiv style={{backgroundColor: SecondaryColor}}>
+             <Titulo style={{borderColor:PrimaryColor}}>{Nombre}</Titulo>
                 <VideoContain>
                  {
                     videos.map(({Img,titulo,categoria,url,Descrip}) => { 

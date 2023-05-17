@@ -5,8 +5,12 @@ import styled from "styled-components";
         text-decoration: none;
         color: black;
         background-color: white;
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
         border-radius: 7px;
+        box-shadow:0 18px 36px rgba(0, 0, 0, 0.30), 0 14px 11px rgba(0, 0, 0, 0.22) ;
         @media screen and (max-width:600px) {
             width: 70%;
         }
@@ -14,8 +18,9 @@ import styled from "styled-components";
 
    export const Titulo = styled.h5`
         font-weight: bold;
-        font-size: 1.1rem;
+        font-size: .8rem;
         color: black;
+        
 
         @media screen and (max-width:600px) {
             font-size: 15px;
@@ -25,24 +30,15 @@ import styled from "styled-components";
 
     export const Img = styled.img `
     border-radius: 7px;
+    width: 100%;
     @media screen and (max-width:600px) {
             width: 70%;
         }
     `
 
-    export const DivColor = styled.div`
-        width: 100%;
-        height:3rem;
-        width: 70%;
+    export const Division = styled.div`
+        margin: 1rem;
     `
 
-    export const Division = styled.div`
-        
-        width: 20%;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        @media screen and (max-width:600px) {
-            width: 70%;
-        }
-    `
+
+   

@@ -36,27 +36,27 @@ function App() {
     {
       Nombre: 'javascript',
       PrimaryColor:'#FFD700' ,
-      SecondaryColor: '#000000',
+      SecondaryColor: '#FDFDBD',
     },
     {
       Nombre: 'Front End',
       PrimaryColor:'#8A2BE2' ,
-      SecondaryColor: '#F0FFFF',
+      SecondaryColor: '#E5E0FF',
     },
     {
       Nombre: 'Back End',
       PrimaryColor:'#7FFF00' ,
-      SecondaryColor: '#556B2F',
+      SecondaryColor: '#CEEDC7',
     },
     {
       Nombre: 'Fetch',
       PrimaryColor:'#7FFF00' ,
-      SecondaryColor: '#20B2AA',
+      SecondaryColor: '#B7C4CF',
     },
     {
       Nombre: 'Tips',
-      PrimaryColor:'#8A2BE2' ,
-      SecondaryColor: '#000000',
+      PrimaryColor:'#E6BA95' ,
+      SecondaryColor: '#FAFDD6',
     },
     {
       Nombre: 'Videojuegos',
