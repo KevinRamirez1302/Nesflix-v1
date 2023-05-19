@@ -28,11 +28,9 @@ export const Div = styled.div`
     }
 
 `
-
-
 export const Imagen = styled.img`
-    width: 100%;
-    height: 70%;
+    width: 90%;
+    height: 60%;
 `
 
 export const Titulo = styled.h2`

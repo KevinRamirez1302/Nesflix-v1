@@ -6,7 +6,8 @@
       "url": "https://www.youtube.com/watch?v=4HnLIAX0EoM&t=2344s&ab_channel=midulive",
       "Img": "https://konstantinlebedev.com/static/76d81ec25cd799b15cd16c0b16e869af/cover.png",
       "categoria": "front end",
-      "id": "c22220d7-15a7-40e8-bb51-3999deaac6e9"
+      "id": "c22220d7-15a7-40e8-bb51-3999deaac6e9",
+      "fav": true
     },
     {
       "titulo": "fetching y mutación de datos en react con el hook useeffect",
@@ -14,7 +15,35 @@
       "url": "https://www.youtube.com/watch?v=JEWFdKmr5wM&t=49s&ab_channel=midudev",
       "Img": "https://www.freecodecamp.org/news/content/images/2020/08/wall-2.jpeg",
       "categoria": "fetch",
-      "id": "e910ed47-672d-4e13-844b-5fc974035662"
+      "id": "e910ed47-672d-4e13-844b-5fc974035662",
+      "fav": false
+    },
+    {
+      "titulo": "next js 13 curso",
+      "Descrip": "",
+      "url": "https://www.youtube.com/watch?v=tA-_vAz9y78&ab_channel=midulive",
+      "Img": "https://miro.medium.com/v2/resize:fit:1000/1*KDMx1YspSrBcFJG-NDZgDg.png",
+      "categoria": "front end",
+      "id": "250be11f-a161-480e-98ca-fe8e96724287",
+      "fav": false
+    },
+    {
+      "titulo": "tips para curriculum",
+      "Descrip": "",
+      "url": "https://www.youtube.com/watch?v=xYi8qzLsS24&t=11s&ab_channel=midulive",
+      "Img": "https://cms-assets.tutsplus.com/cdn-cgi/image/width=630/uploads/users/2660/posts/35938/image/resume-vol-20-Q7E5URV.jpg",
+      "categoria": "tips",
+      "id": "721cdbe1-f57f-42be-a73c-3bd4fa3a807e",
+      "fav": false
+    },
+    {
+      "titulo": "proyecto con tailwind",
+      "Descrip": "",
+      "url": "https://www.youtube.com/watch?v=YKkwQM7oQM0&ab_channel=midulive",
+      "Img": "https://miro.medium.com/v2/resize:fit:1400/1*oPL8C-i04sqAUoOS_da9aA.jpeg",
+      "categoria": "front end",
+      "id": "1795901a-8689-427e-9059-42758b586d74",
+      "fav": false
     }
   ]
 }

@@ -12,6 +12,7 @@ const Footer = () => {
             <a href="" target='_blank'><BsLinkedin color='blue' size={50} /></a>
             <a href='' target='_blank'><BsGithub color='black' size={50} /></a>
             </DivBrand>
+            <p>Desarrollado por kevin @Copyright 2023</p>
         </SectionFoo>
      
      </>

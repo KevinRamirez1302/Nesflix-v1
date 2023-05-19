@@ -4,7 +4,7 @@ import VideoCard from "../Videocard/videoCard";
 const Seccion = (props) => {
 
     const {Nombre,SecondaryColor,PrimaryColor} = props.datos
-    const {videos} = props
+    const {videos, Like, Eliminar} = props
 
     return <>{
         videos.length  > 0 && 
@@ -12,7 +12,7 @@ const Seccion = (props) => {
              <Titulo style={{borderColor:PrimaryColor}}>{Nombre}</Titulo>
                 <VideoContain>
                  {
-                    videos.map(({Img,titulo,categoria,url,Descrip}) => { 
+                    videos.map(({Img,titulo,categoria,url,Descrip,fav,id}) => { 
                          return <VideoCard
                         key={titulo}
                         img={Img}
@@ -21,6 +21,10 @@ const Seccion = (props) => {
                         url={url}
                         descripcion={Descrip}
                         datos={props.datos}
+                        id={id}
+                        fav={fav}
+                        Like = {Like}
+                        Eliminar={Eliminar}
                     /> })
                     
             }

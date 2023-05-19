@@ -26,7 +26,8 @@ const Formulario = (props) => {
       url: url,
       Img : img,
       categoria: categoria.toLowerCase(),
-      id: uuidv4()
+      id: uuidv4(),
+      fav:false
     };
     SetNombre("");
     Seturl("");

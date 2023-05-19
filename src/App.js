@@ -9,7 +9,7 @@ import axios from "axios";
 import { Front } from "./componentes/Front/front";
 import { SketonVi } from "./componentes/Skeleton/skeleton";
 import Seccion from "./componentes/Secciones/Seccionvideo";
-
+import Agregado from "./componentes/finishAdd/Agregado";
 
  //ESTILOS 
  
@@ -31,6 +31,8 @@ function App() {
   const [videos, setVideos] = useState([])
   
   const [loading,setLoading] =useState(false)
+
+  const [load,setLoad] = useState(false)
 
   const Secciones = [
     {
@@ -85,21 +87,43 @@ function App() {
    
  },[])
 
-
-    
   
   //RECIBIR DATOS DE FORM
 
 
-  const recibirDatos = (datos) => {
+  const recibirDatos = async(datos) => {
     
-  axios.post(('http://localhost:4000/peliculas'),datos)
-
-    setVideos([...videos, datos]);
+  await axios.post(('http://localhost:4000/peliculas'),datos)
+    try{
+      setVideos([...videos, datos]);
+      setLoad(true)
+    }
+    catch{}
+    
   };
 
- 
+  
 
+  const Like = (id) => {
+        console.log('Like' + id)
+        const newFav = videos.map((datos) => {
+          if(datos.id === id) {
+            datos.fav = !datos.fav
+          }
+           return datos
+        } ) 
+        setVideos(newFav)
+    }
+
+    const Eliminar = (id) => {
+      console.log("su id es" + id)
+      const videosNew = videos.filter((datos) => datos.id !== id )
+      setVideos(videosNew)
+
+    }
+    
+  
+    
   return (
     <>
       <Router>
@@ -125,12 +149,15 @@ function App() {
                 datos={datos} 
                 key={datos.Nombre}
                 videos={videos.filter(video => video.categoria === datos.Nombre.toLowerCase())}
+                Like={Like}
+                Eliminar={Eliminar}
                 /> 
                 )}
            </VideoContainer>
               }
             
           />
+          <Route path="success" element={<Agregado />} />
           <Route path="/" element={ <Front />} />
         </Routes>
       </Router>

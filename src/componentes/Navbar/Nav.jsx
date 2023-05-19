@@ -10,7 +10,9 @@ const Navbar = (props) => {
     return <Nav action="">
 
         <Div>
-        <Titulo to="/">Nes<Span>flix</Span></Titulo>
+        <motion.div
+        whileHover={{rotate:-8}}
+        ><Titulo to="/">Nes<Span>flix</Span></Titulo></motion.div>
         <motion.div 
         initial={{ scale: 0 }}
         animate={{ rotate: 360, scale: 1 }}
@@ -23,8 +25,14 @@ const Navbar = (props) => {
       </Div>
         
         <Ul>
-            <Li><LinkSty to="Addvideo">Add Movie</LinkSty></Li>
-            <Li><A href="Videos">Videos</A></Li>
+           <motion.div
+           whileHover={{ scale: [null, 1, 1.1] }}
+           transition={{ duration: 0.3 }}
+           ><Li><LinkSty to="Addvideo">Add Movie</LinkSty></Li></motion.div> 
+           <motion.div
+           whileHover={{ scale: [null, 1, 1.1] }}
+           transition={{ duration: 0.3 }}
+           > <Li><A href="Videos">Videos</A></Li></motion.div>
         </Ul>
 
     </Nav>
