@@ -44,6 +44,24 @@
       "categoria": "front end",
       "id": "1795901a-8689-427e-9059-42758b586d74",
       "fav": false
+    },
+    {
+      "titulo": "react native curso",
+      "Descrip": "React native curso completo",
+      "url": "https://www.youtube.com/watch?v=qi87b6VcIHY&ab_channel=midudev",
+      "Img": "https://www.qed42.com/sites/default/files/styles/featured_image/public/2018-11/react-native.png?itok=lj4A4r0I",
+      "categoria": "front end",
+      "id": "40db587d-e80e-48e0-9600-1403bd8e87fa",
+      "fav": true
+    },
+    {
+      "titulo": "tutorial typescript  ",
+      "Descrip": "",
+      "url": "https://www.youtube.com/watch?v=xtp_DuPxo9Q&ab_channel=midudev",
+      "Img": "https://blog.theodo.com/static/ba2166b279b234c4824d1c2fb299ced2/ee604/ts_logo.png",
+      "categoria": "javascript",
+      "id": "287f0fce-f2a5-40db-9d25-85e677a7a0ba",
+      "fav": true
     }
   ]
 }

@@ -10,6 +10,7 @@ import { Front } from "./componentes/Front/front";
 import { SketonVi } from "./componentes/Skeleton/skeleton";
 import Seccion from "./componentes/Secciones/Seccionvideo";
 import Agregado from "./componentes/finishAdd/Agregado";
+import Error from "./componentes/error/error";
 
  //ESTILOS 
  
@@ -32,7 +33,7 @@ function App() {
   
   const [loading,setLoading] =useState(false)
 
-  const [load,setLoad] = useState(false)
+
 
   const Secciones = [
     {
@@ -70,9 +71,9 @@ function App() {
    // FETCH
   const Data = async() => {
     try {
-      axios.get('http://localhost:4000/peliculas').then(res => setVideos(res.data) )
+      axios.get('https://my-json-server.typicode.com/KevinRamirez1302/Nesflix-v1/peliculas').then(res => setVideos(res.data) )
       setLoading(true)
-      console.log('render FETCH')
+      
      }
      catch {}
   }
@@ -81,7 +82,7 @@ function App() {
   useEffect(()=> {
     setTimeout(()=>{
       Data()
-      console.log('RENDER USE EFFECT')
+      
     },3000)
     
    
@@ -93,10 +94,9 @@ function App() {
 
   const recibirDatos = async(datos) => {
     
-  await axios.post(('http://localhost:4000/peliculas'),datos)
+  await axios.post(('https://my-json-server.typicode.com/KevinRamirez1302/Nesflix-v1/peliculas'),datos)
     try{
       setVideos([...videos, datos]);
-      setLoad(true)
     }
     catch{}
     
@@ -159,6 +159,7 @@ function App() {
           />
           <Route path="success" element={<Agregado />} />
           <Route path="/" element={ <Front />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </Router>
     </>

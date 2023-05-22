@@ -40,7 +40,7 @@ import styled from "styled-components";
     border-radius: 7px;
     width: 100%;
     @media screen and (max-width:600px) {
-            width: 70%;
+            width: 100%;
         }
     `
 

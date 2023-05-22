@@ -9,10 +9,18 @@ export const Nav = styled.nav `
     padding: 0 15% 0 10%;
     align-items: center;
     box-sizing: border-box;
-    @media screen and (max-width:600px) {
+
+    @media screen and (max-width:800px) {
 
         padding: 0 7% 0 7%;
 }
+
+    @media screen and (max-width:450px) {
+
+        padding: 0 2% 0 2%;
+}
+
+
     `
 
    export const LinkSty = styled(Link) `
@@ -29,10 +37,16 @@ export const Nav = styled.nav `
         
       }
 
-      @media screen and (max-width:600px) {
+      @media screen and (max-width:800px) {
 
         font-size: 1.2rem;
+        padding: .4rem;
       }
+      @media screen and (max-width:450px) {
+
+        font-size: 1rem;
+        padding: .2rem;
+}
 
       
       `
@@ -52,9 +66,16 @@ background-color: #43A49B;
   
   
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
 
 font-size: 1.2rem;
+padding: .4rem;
+}
+
+@media screen and (max-width:450px) {
+
+font-size: 1rem;
+padding: .2rem;
 }
 
 `
@@ -67,10 +88,16 @@ font-size: 1.2rem;
         font-size: 2.5rem;
         font-weight: bold;
         color: #408d86;
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:800px) {
 
-font-size: 1.7rem;
+        font-size: 1.7rem;
 }
+
+        @media screen and (max-width:450px) {
+
+        font-size: 1.5rem;
+        
+        }
     `
 
    export const Li = styled.li`
@@ -83,9 +110,15 @@ font-size: 1.7rem;
         color: #80CBC4;
         font-size: 2rem;
         margin-right: .6rem;
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:800px) {
 
 font-size: 1.5rem;
+}
+
+@media screen and (max-width:450px) {
+
+font-size: 1.5rem;
+
 }
     `
 

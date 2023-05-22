@@ -9,9 +9,11 @@ import styled from "styled-components";
     
     @media screen and (max-width:600px){
         flex-direction: column;
+        height: 65vh;
     }
     
 `
+
 
 export const Div = styled.div`
     width: 50%;
@@ -29,17 +31,24 @@ export const Div = styled.div`
 
 `
 export const Imagen = styled.img`
-    width: 90%;
-    height: 60%;
+    width: 100%;
+    height: 80%;
 `
 
 export const Titulo = styled.h2`
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     color: #728f9e;
+
+    @media screen and (max-width:450px) {
+  font-size: 1rem;
+}
 `
 
 export const Parrafo = styled.p`
     font-size: 20px;
     color: #728f9e;
+    @media screen and (max-width:450px) {
+  font-size: 1rem;
+}
 `
