@@ -10,8 +10,8 @@ export const SectionFoo = styled.section `
     color: white;
     padding: 7% 15%;
     @media screen and (max-width:450px) {
-
-        height: 80vh;
+        height: 60vh;
+        flex-direction: column;
 }
 
 
